@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,143 +10,147 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        body { font-family: 'Urbanist', sans-serif; background-color: #0f0f0f; color: #e5e7eb; }
+        body { font-family: 'Urbanist', sans-serif; background-color: #0a0a0a; color: #e5e7eb; }
         .font-serif { font-family: 'Playfair Display', serif; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .accent-gold { color: #d4af37; }
         .bg-gold { background-color: #d4af37; }
         .border-gold { border-color: #d4af37; }
+        .gradient-text { background: linear-gradient(135deg, #d4af37 0%, #f1d592 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="p-4 md:p-10">
 
-    <!-- Header Section -->
-    <header class="max-w-6xl mx-auto mb-12 text-center">
-        <div class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest text-black uppercase bg-gold rounded">Estratégia Diamond 2026</div>
-        <h1 class="text-4xl md:text-6xl font-serif mb-4">Amor & Goleada: Edição Belém</h1>
-        <p class="text-lg text-gray-400">Planejamento de Performance | Namorados + Estreia do Brasil na Copa</p>
-        <div class="flex justify-center gap-8 mt-8">
-            <div class="text-left">
-                <p class="text-[10px] text-gray-500 uppercase tracking-widest">Estrategista</p>
-                <p class="font-bold accent-gold">Percy Jairo Gandra</p>
+    <!-- Cabeçalho -->
+    <header class="max-w-6xl mx-auto mb-16 text-center">
+        <div class="inline-block px-4 py-1 mb-6 text-[10px] font-bold tracking-[0.3em] text-black uppercase bg-gold rounded-full">Estratégia Diamond 2026</div>
+        <h1 class="text-5xl md:text-7xl font-serif mb-6 gradient-text">Amor & Goleada: Edição Belém</h1>
+        <p class="text-xl text-gray-400 font-light">Planeamento de Performance | Namorados + Estreia do Brasil (Pós-COP30)</p>
+        
+        <div class="flex flex-wrap justify-center gap-12 mt-12">
+            <div class="text-center md:text-left">
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Estrategista Diamond</p>
+                <p class="text-xl font-bold accent-gold">Percy Jairo Gandra</p>
             </div>
-            <div class="text-left">
-                <p class="text-[10px] text-gray-500 uppercase tracking-widest">Produção</p>
-                <p class="font-bold">Amanda (Eh! Chocolate)</p>
+            <div class="text-center md:text-left">
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Produção de Insumos</p>
+                <p class="text-xl font-bold text-white">Amanda (Eh! Chocolate)</p>
             </div>
         </div>
     </header>
 
-    <!-- Main Grid -->
-    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Grelha Principal -->
+    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Responsabilidades -->
-        <section class="glass p-6 rounded-2xl">
-            <div class="flex items-center gap-3 mb-4">
-                <i class="fa-solid fa-users-gear accent-gold text-2xl"></i>
-                <h2 class="text-xl font-bold">Acordo Operacional</h2>
+        <!-- Bloco 1: Acordo de Gestão -->
+        <section class="glass p-8 rounded-3xl relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <i class="fa-solid fa-handshake-simple text-6xl"></i>
             </div>
+            <h2 class="text-2xl font-serif accent-gold mb-6 italic">Responsabilidades</h2>
+            <div class="space-y-6">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Gestão Percy</p>
+                    <ul class="text-sm space-y-2 text-gray-300">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check accent-gold mt-1"></i> Estratégia de Tráfego & Copy</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check accent-gold mt-1"></i> Análise de Métricas (Mães)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check accent-gold mt-1"></i> Segmentação de Públicos</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Operação Amanda</p>
+                    <ul class="text-sm space-y-2 text-gray-300">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-camera text-gray-500 mt-1"></i> Insumos Visuais Reais</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-video text-gray-500 mt-1"></i> Vídeos Humanizados (Campeão)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-store text-gray-500 mt-1"></i> Vitrine Orgânica</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 2: Cronograma Crítico -->
+        <section class="glass p-8 rounded-3xl border-gold/20">
+            <h2 class="text-2xl font-serif accent-gold mb-6 italic">A Dobradinha</h2>
             <div class="space-y-4">
-                <div class="border-l-2 border-gold pl-4">
-                    <p class="text-sm font-bold accent-gold uppercase">Percy Gandra</p>
-                    <p class="text-xs text-gray-400">Tráfego, Copywriting, Métricas e Segmentação.</p>
-                </div>
-                <div class="border-l-2 border-gray-600 pl-4">
-                    <p class="text-sm font-bold uppercase">Amanda</p>
-                    <p class="text-xs text-gray-400">Visual, Produtos, Vídeos Humanizados e Vitrine Orgânica.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Calendário -->
-        <section class="glass p-6 rounded-2xl">
-            <div class="flex items-center gap-3 mb-4">
-                <i class="fa-solid fa-calendar-check accent-gold text-2xl"></i>
-                <h2 class="text-xl font-bold">Datas Críticas</h2>
-            </div>
-            <div class="space-y-3">
-                <div class="flex justify-between items-center p-2 bg-white/5 rounded">
-                    <div>
-                        <p class="text-sm font-bold">12/06 - Sexta</p>
-                        <p class="text-[10px] text-gray-400">Namorados (Cestas)</p>
+                <div class="p-4 bg-white/5 rounded-2xl border border-white/10">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-sm font-bold text-white">12/06 - Sexta</span>
+                        <i class="fa-solid fa-heart text-pink-600"></i>
                     </div>
-                    <i class="fa-solid fa-heart text-pink-500"></i>
+                    <p class="text-xs text-gray-400">Dia dos Namorados: Foco em Cestas Premium.</p>
                 </div>
-                <div class="flex justify-between items-center p-2 bg-white/5 rounded">
-                    <div>
-                        <p class="text-sm font-bold">13/06 - Sábado</p>
-                        <p class="text-[10px] text-gray-400">Brasil vs Marrocos (19h)</p>
+                <div class="flex justify-center py-2">
+                    <i class="fa-solid fa-arrow-down text-gold animate-bounce"></i>
+                </div>
+                <div class="p-4 bg-green-900/10 rounded-2xl border border-green-500/20">
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-sm font-bold text-green-500">13/06 - Sábado</span>
+                        <i class="fa-solid fa-soccer-ball text-green-500"></i>
                     </div>
-                    <i class="fa-solid fa-soccer-ball text-green-500"></i>
+                    <p class="text-xs text-gray-400">Estreia Brasil (19h): Kits de Torcida.</p>
+                </div>
+                <p class="text-[10px] text-center text-gray-500 italic mt-4">Estratégia: Venda Cruzada Automática.</p>
+            </div>
+        </section>
+
+        <!-- Bloco 3: Inteligência Belém 2026 -->
+        <section class="glass p-8 rounded-3xl md:col-span-1">
+            <h2 class="text-2xl font-serif accent-gold mb-6 italic">O Fator Regional</h2>
+            <div class="space-y-4">
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-leaf accent-gold"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold">Bioeconomia</p>
+                        <p class="text-[10px] text-gray-400">Tapioca com Queijo Cuia > Pão de Queijo. O cliente quer Belém.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-snowflake accent-gold"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold">Climatização</p>
+                        <p class="text-[10px] text-gray-400">Ambiente refrigerado e Cold Brews regionais são imans de vendas.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-bolt accent-gold"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold">Grab & Go</p>
+                        <p class="text-[10px] text-gray-400">Combos rápidos para consumo em grupo antes dos jogos.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Investimento -->
-        <section class="glass p-6 rounded-2xl">
-            <div class="flex items-center gap-3 mb-4">
-                <i class="fa-solid fa-coins accent-gold text-2xl"></i>
-                <h2 class="text-xl font-bold">Alocação de Capital</h2>
+        <!-- Audiência e Leads -->
+        <section class="glass p-8 rounded-3xl md:col-span-3 grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h3 class="text-gray-500 text-xs font-bold uppercase tracking-widest mb-2">Base de Dados (Mães)</h3>
+                <p class="text-6xl font-serif accent-gold">2.035</p>
+                <p class="text-xs text-gray-400 mt-2">Leads qualificados prontos para re-ativação.</p>
             </div>
-            <div class="text-center">
-                <p class="text-3xl font-bold accent-gold">R$ 600,00</p>
-                <p class="text-[10px] text-gray-500 uppercase mt-1">Teto Máximo de Tração</p>
-                <div class="mt-4 flex gap-2 justify-center">
-                    <span class="px-2 py-1 bg-white/10 rounded text-[10px]">30% Aquecimento</span>
-                    <span class="px-2 py-1 bg-gold/20 text-gold rounded text-[10px] font-bold">70% Conversão</span>
+            <div class="md:col-span-2">
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                    <p class="text-sm italic text-gray-300">"Não competimos por preço baixo, mas pela <strong>Experiência Amazónica</strong> que o mundo aprendeu a esperar de Belém pós-COP30."</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Pesquisa Belém -->
-        <section class="glass p-6 rounded-2xl md:col-span-2">
-            <div class="flex items-center gap-3 mb-4">
-                <i class="fa-solid fa-magnifying-glass-chart accent-gold text-2xl"></i>
-                <h2 class="text-xl font-bold">Inteligência Belém (Pós-COP30)</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-3 bg-white/5 rounded-lg">
-                    <p class="text-xs font-bold accent-gold mb-1">REGIONALISMO > PADRÃO</p>
-                    <p class="text-[10px] text-gray-400">Trocar Pão de Queijo por Tapioca com Queijo Cuia. O paraense quer identidade local.</p>
-                </div>
-                <div class="p-3 bg-white/5 rounded-lg">
-                    <p class="text-xs font-bold accent-gold mb-1">CLIMATIZAÇÃO</p>
-                    <p class="text-[10px] text-gray-400">Principal argumento de venda: Conforto e gelo contra o calor. Foco em Cold Brews regionais.</p>
-                </div>
-                <div class="p-3 bg-white/5 rounded-lg">
-                    <p class="text-xs font-bold accent-gold mb-1">GRAB & GO</p>
-                    <p class="text-[10px] text-gray-400">Combos prontos para torcidas: Praticidade e rapidez no atendimento.</p>
-                </div>
-                <div class="p-3 bg-white/5 rounded-lg">
-                    <p class="text-xs font-bold accent-gold mb-1">ROBUSTA AMAZÔNICO</p>
-                    <p class="text-[10px] text-gray-400">Posicionamento de autoridade: Valorização dos grãos da nossa própria região.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Público -->
-        <section class="glass p-6 rounded-2xl">
-            <div class="flex items-center gap-3 mb-4">
-                <i class="fa-solid fa-users-viewfinder accent-gold text-2xl"></i>
-                <h2 class="text-xl font-bold">Audiência</h2>
-            </div>
-            <div class="text-center mb-4">
-                <p class="text-4xl font-bold">2.035</p>
-                <p class="text-[10px] text-gray-500 uppercase">Leads das Mães (Re-aquecer)</p>
-            </div>
-            <div class="space-y-2 text-xs text-gray-400">
-                <p><i class="fa-solid fa-check accent-gold mr-2"></i> Avatar: Provedor de Afeto</p>
-                <p><i class="fa-solid fa-check accent-gold mr-2"></i> Localização: Raio 4km Belém</p>
-                <p><i class="fa-solid fa-check accent-gold mr-2"></i> Interesse: Futebol e Gourmet</p>
+            <div class="text-center md:text-right">
+                <p class="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Investimento Projetado</p>
+                <p class="text-3xl font-bold">R$ 600,00</p>
+                <p class="text-[10px] text-gold font-bold mt-2">70% FOCADO EM CONVERSÃO WHATSAPP</p>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer Quote -->
-    <footer class="max-w-6xl mx-auto mt-12 text-center text-gray-600">
-        <p class="italic">"Quem garante o romance na sexta, já leva o sabor da vitória para o sábado."</p>
-        <p class="text-[10px] mt-4 uppercase tracking-widest">Eh! Chocolate Café | Percy Gandra Consultoria</p>
+    <!-- Rodapé -->
+    <footer class="max-w-6xl mx-auto mt-20 text-center">
+        <p class="text-gray-600 text-sm italic">Gestão Estratégica Eh! Chocolate Café | Percy Jairo Gandra - 2026</p>
     </footer>
 
 </body>
