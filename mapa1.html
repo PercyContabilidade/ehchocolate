@@ -1,0 +1,116 @@
+import React from 'react';
+import { Heart, Trophy, Coffee, Leaf, Users, Target, Globe, ChevronRight } from 'lucide-react';
+
+const App = () => {
+  return (
+    <div className="min-h-screen bg-[#0a0a0a] text-gray-200 font-sans p-4 md:p-10">
+      {/* Header Premium */}
+      <header className="max-w-6xl mx-auto text-center mb-16">
+        <div className="inline-block px-6 py-2 mb-6 text-[10px] font-bold tracking-[0.4em] text-black uppercase bg-[#d4af37] rounded-full shadow-lg shadow-gold/20">
+          Diamond Strategy 2026
+        </div>
+        <h1 className="text-5xl md:text-8xl font-serif mb-6 bg-gradient-to-r from-[#d4af37] via-[#f1d592] to-[#d4af37] bg-clip-text text-fill-transparent">
+          Amor & Goleada
+        </h1>
+        <p className="text-xl md:text-2xl font-light text-gray-400 tracking-wide">
+          Edição Diplomacia Gastronômica | Belém Pós-COP30
+        </p>
+        
+        <div className="flex flex-wrap justify-center gap-10 mt-12 border-t border-white/10 pt-10">
+          <div className="text-center md:text-left">
+            <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Estrategista de Performance</p>
+            <p className="text-xl font-bold text-[#d4af37]">Percy Jairo Gandra</p>
+          </div>
+          <div className="text-center md:text-left">
+            <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Direção de Conteúdo</p>
+            <p className="text-xl font-bold text-white">Amanda (Eh! Chocolate)</p>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-6xl mx-auto space-y-10">
+        
+        {/* Nova Seção: O Legado COP30 */}
+        <section className="bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] p-8 rounded-3xl border border-[#d4af37]/30">
+          <div className="flex items-center gap-4 mb-8">
+            <Globe className="text-[#d4af37] w-10 h-10" />
+            <h2 className="text-3xl font-serif text-white italic">Influência Diplomática (Saulo Jennings)</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white/5 p-6 rounded-2xl border border-white/5">
+              <h3 className="text-[#d4af37] font-bold mb-3 uppercase text-xs tracking-widest">Chocolate de Origem</h3>
+              <p className="text-sm text-gray-400">Uso exclusivo de cacau nativo da Ilha do Combu e Transamazônica. O padrão servido aos líderes globais.</p>
+            </div>
+            <div className="bg-white/5 p-6 rounded-2xl border border-white/5">
+              <h3 className="text-[#d4af37] font-bold mb-3 uppercase text-xs tracking-widest">Bioeconomia Local</h3>
+              <p className="text-sm text-gray-400">Doces com Taperebá, Cupuaçu e Bacuri. Quebrando o preconceito e valorizando a doçura da floresta.</p>
+            </div>
+            <div className="bg-white/5 p-6 rounded-2xl border border-white/5">
+              <h3 className="text-[#d4af37] font-bold mb-3 uppercase text-xs tracking-widest">Café Agroflorestal</h3>
+              <p className="text-sm text-gray-400">Grãos sombreados com acompanhamentos regionais: broas de castanha e bolos de macaxeira.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Grelha Operacional */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Calendário */}
+          <div className="bg-white/5 p-8 rounded-3xl border border-white/10">
+            <div className="flex items-center gap-3 mb-6">
+              <Trophy className="text-[#d4af37]" />
+              <h2 className="text-2xl font-serif">Cronograma Amor & Goleada</h2>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between p-4 bg-white/5 rounded-xl border-l-4 border-pink-500">
+                <div>
+                  <p className="text-xs font-bold text-pink-500">12/06 - SEXTA</p>
+                  <p className="text-lg font-bold">Dia dos Namorados</p>
+                  <p className="text-xs text-gray-400 italic">"Cesta Diamond: O Banquete dos Líderes"</p>
+                </div>
+                <Heart className="text-pink-500 fill-pink-500 w-8 h-8" />
+              </div>
+              <div className="flex items-center justify-between p-4 bg-white/5 rounded-xl border-l-4 border-green-500">
+                <div>
+                  <p className="text-xs font-bold text-green-500">13/06 - SÁBADO</p>
+                  <p className="text-lg font-bold">Estreia do Brasil (19h)</p>
+                  <p className="text-xs text-gray-400 italic">"Kits Torcida: Sabores da Vitória"</p>
+                </div>
+                <Trophy className="text-green-500 w-8 h-8" />
+              </div>
+            </div>
+          </div>
+
+          {/* Investimento e Métricas */}
+          <div className="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Target className="text-[#d4af37]" />
+                <h2 className="text-2xl font-serif">Tráfego e Performance</h2>
+              </div>
+              <p className="text-5xl font-bold text-white mb-2">R$ 600,00</p>
+              <p className="text-xs text-[#d4af37] font-bold uppercase tracking-widest mb-6">Investimento Teto | 20/05 a 14/06</p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="text-center p-4 bg-white/5 rounded-xl">
+                <p className="text-2xl font-bold text-white">2.035</p>
+                <p className="text-[10px] text-gray-500 uppercase">Leads Qualificados</p>
+              </div>
+              <div className="text-center p-4 bg-white/5 rounded-xl">
+                <p className="text-2xl font-bold text-white">30%</p>
+                <p className="text-[10px] text-gray-500 uppercase">Aquecimento</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer className="max-w-6xl mx-auto mt-20 text-center border-t border-white/5 pt-10">
+        <p className="text-gray-600 text-sm italic">
+          Eh! Chocolate Café | Gestão Estratégica Percy Jairo Gandra - Todos os direitos reservados 2026
+        </p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
